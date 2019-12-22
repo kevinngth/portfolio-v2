@@ -1,186 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Kevin Ng - Portfolio</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Kevin Ng</span>
-      <span class="d-none d-lg-block">
-        <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt=""> -->
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Kevin
-          <span class="text-primary">Ng</span>
-        </h1>
-        <p class="lead mb-5">Software engineer based in Singapore.</p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fas fa-gem"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fas fa-database"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-git-alt"></i>
-          </li>
-        </ul>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
-      <div class="w-100">
-        <div class="mb-5">
-            <h2>Portfolio</h2>
-            <small>Pages hosted on Heroku goes to sleep after 1 hour of inactivity, this causes a short delay for the first request, but subsequent requests will perform normally.</small>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+        <script src="https://kit.fontawesome.com/dc9d928071.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="buttons"><a class="active" href="#landing">About</a></div>
+                <div class="buttons"><a href="#projects">Projects</a></div>
+                <div class="buttons"><a href="#skills">Skills</a></div>
+            </header>
+            <main>
+                <section id="landing">
+                    <div class="column">
+                        <h1 class="title text-primary"><span id="intro"></span><span id="cursor">_</span></h1>
+                        <p>I'm Kevin Ng, a full-stack software engineer based in Singapore.</p>
+                        <p>This is my portfolio.</p>
+                    </div>
+                    <div>
+                        <a class="credits" href="https://unsplash.com/@itsdenispavlovic?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Denis Pavlovic"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Photo by Denis Pavlovic</span></a>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div class="mosaic">
+                        <div class="m-item medium" id="one">Pages hosted on Heroku goes to sleep after 1 hour of inactivity, this causes a short delay for the first request, but subsequent requests will perform normally.</div>
+                        <div class="m-item large" id="two"><a href="https://jyggr.herokuapp.com/" target="_blank">Jyggr</a></div>
+                        <div class="m-item medium" id="three"><a href="http://quizter.herokuapp.com/" target="_blank">Quizter</a></div>
+                        <div class="m-item small" id="four"><h1 class="title text-primary">Projects</h1></div>
+                        <div class="m-item tall" id="five"><a href="https://kevinngth.github.io/Project-1-Game/" target="_blank">Shopping Game</a></div>
+                        <div class="m-item wide" id="six"><a href="https://nat-jio.herokuapp.com/" target="_blank">Nat-Jio</a></div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <div class="column skills">
+                        <h1 class="title text-primary">Skills</h1>
+                        <div>Programming Languages &amp; Tools</div>
+                        <ul class="icon-list">
+                            <li class="icons">
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-bootstrap"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-js-square"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-react"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-node-js"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-sass"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-npm"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fas fa-gem"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fas fa-database"></i>
+                            </li>
+                            <li class="icons">
+                                <i class="fab fa-git-alt"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="text-primary">
+                    <span>Get in touch! </span><span>&nbsp;&nbsp;<i class="fas fa-phone-square-alt"></i> (+65) 9155 3846 &nbsp;&nbsp;</span><span>&nbsp;&nbsp;<i class="fas fa-envelope"></i> kevin.ng.th@gmail.com</span>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/kevin-ng-th/" target="_blank">
+                        &nbsp;&nbsp;<i class="fab fa-linkedin text-primary"></i>&nbsp;&nbsp;
+                    </a>
+                    <a href="https://github.com/kevinngth" target="_blank">
+                        &nbsp;&nbsp;<i class="fab fa-github-square text-primary"></i>&nbsp;&nbsp;
+                    </a>
+                </div>
+            </footer>
         </div>
-        <div class="portfolio">
-            <a class="item" target="_blank" href="https://kevinngth.github.io/Project-1-Game/">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(./img/project-1.png)"></div>
-            </a>
-        </div>
-        <br/>
-        <div class="portfolio">
-            <a class="item" target="_blank" href="https://jyggr.herokuapp.com/">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(./img/project-2.png)"></div>
-            </a>
-        </div>
-        <br/>
-        <div class="portfolio">
-            <a class="item" target="_blank" href="https://nat-jio.herokuapp.com/">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(./img/project-3.png)"></div>
-            </a>
-        </div>
-        <br/>
-        <div class="portfolio">
-            <a class="item" target="_blank" href="http://quizter.herokuapp.com/">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(./img/project-4.png)"></div>
-            </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
-      <div class="w-100">
-        <h2 class="mb-5">Contact</h2>
-        <div class="contact">
-            <p class="contact">Get in touch with me via:</p>
-
-            <div class="subheading mb-5">(+65) 9155 3846 ·
-                <a href="mailto:kevin.ng.th@gmail.com">kevin.ng.th@gmail.com</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kevin-ng-th/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/kevinngth">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-</body>
+        <script src="script.js"/>
+    </body>
 </html>

@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oxygen+Mono&display=swap');
+
+$primary:       rgb(0, 180, 230) !default;
+$primary-dim:   rgba(0, 180, 230, .4);
+$secondary:     rgb(0, 40, 70) !default;
+$alternate:     rgba(60, 117, 95, 0.5);
+$light:         #B4B4B4 !default;
+$dark:          #050505 !default;
+
+$header-height: 8vh;
+$footer-height: 7vh;
+$main-height:  85vh;
+
+body {
+  background-color: #000;
+  color: $light;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+::selection {
+  color: white;
+  background: none;
+}
+.text-primary {
+  color: $primary;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration:none;
+  color: $primary;
+  text-shadow: 0 0 15px $primary;
+}
+.buttons {
+  font-size: 1.5rem;
+  border-bottom: 3px solid $primary;
+  &:hover {
+    animation: border-flicker 2s linear forwards;
+  }
+}
+h1 {
+  animation: text-flicker 2s linear 3s forwards;
+}
+
+@keyframes text-flicker {
+  2% { 
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  3% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  6% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  9% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  11% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  14% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  18% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  32% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  33% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  37% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  39% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  43% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  46% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  47% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  100% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+}
+
+@keyframes letter-flicker {
+    2% { 
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  3% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  6% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  9% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  11% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  14% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  18% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  32% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  33% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  37% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  39% {
+    color: $alternate;
+    text-shadow: none;
+  }
+  40% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+  100% {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+}
+
+@keyframes border-flicker {
+  2% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  3% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  5% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  6% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  7% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  9% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  13% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  16% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  18% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  22% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  34% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  36% {
+    border: 3px solid $secondary;
+    box-shadow: none;
+  }
+  54% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+  100% {
+    border: 3px solid $primary;
+    box-shadow: 0 0 15px -1px $primary, 0 0 12px -1px $primary inset;
+  }
+}
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  width: 100%;
+  display: flex;
+  & > div {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    & > a {
+      line-height: $header-height;
+      display: block;
+      &.active {
+        color: $light;
+        animation: letter-flicker 3s linear infinite;
+      }
+    }
+  }
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  background-color: #000;
+  line-height: $footer-height;
+  padding: 0 2rem;
+  a:hover {
+    animation: letter-flicker .5s linear infinite;
+  }
+  span {
+    text-shadow: 0 0 15px $primary;
+    &:hover {
+      animation: letter-flicker .5s linear infinite;
+    }
+  }
+}
+
+
+main {
+  position: fixed;
+  font-size: 1rem;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: $main-height;
+  margin: $header-height 0;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+  }
+}
+section {
+  scroll-snap-align: start;
+  height: $main-height;
+}
+.column {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+}
+.title {
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 3rem;
+  color: $primary-dim;
+}
+#landing {
+  background: url(img/denis-pavlovic-wl5AypUmamo-unsplash-copy-3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.credits {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  padding:4px 6px;
+  font-family:-apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1.2;
+  display: inline-block;
+  border-radius:3px;
+  text-shadow: none;
+}
+
+
+
+.mosaic {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.m-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.small {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+    font-size: 200%;
+  }
+  &.large {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+  &.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+  &.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+  }
+  &#one {
+    padding: 2rem;
+    font-size: 75%;
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+  &#two {
+    background: url(img/project-2.png) no-repeat center top;
+    background-size: cover;
+    background-color: rgba($color: #000000, $alpha: .7);
+    background-blend-mode: multiply;
+    &:hover {
+      background-blend-mode: initial;
+    }
+  }
+  &#three {
+    background: url(img/project-4.png) no-repeat center top;
+    background-size: cover;
+    background-color: rgba($color: #000000, $alpha: .7);
+    background-blend-mode: multiply;
+    grid-row: span 3;
+    grid-column: span 2;
+    &:hover {
+      background-blend-mode: initial;
+    }
+  }
+  &#five {
+    background: url(img/project-1.png) no-repeat center center;
+    background-size: cover;
+    background-color: rgba($color: #000000, $alpha: .7);
+    background-blend-mode: multiply;
+    &:hover {
+      background-blend-mode: initial;
+    }
+  }
+  &#six {
+    background: url(img/project-3.png) no-repeat center center;
+    background-size: cover;
+    background-color: rgba($color: #000000, $alpha: .7);
+    background-blend-mode: multiply;
+    &:hover {
+      background-blend-mode: initial;
+    }
+  }
+}
+
+
+.skills {
+  h1 {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+    animation: letter-flicker .5s linear infinite;
+  }
+}
+.icon-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  list-style: none;
+}
+.icons {
+  margin: 0 1rem;
+  &:hover {
+    color: $primary;
+    text-shadow: 0 0 15px $primary;
+  }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

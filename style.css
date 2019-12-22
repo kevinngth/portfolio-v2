@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oxygen+Mono&display=swap");
+body {
+  background-color: #000;
+  color: #B4B4B4;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; }
+
+::selection {
+  color: white;
+  background: none; }
+
+.text-primary {
+  color: #00b4e6; }
+
+.responsive {
+  width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #00b4e6;
+  text-shadow: 0 0 15px #00b4e6; }
+
+.buttons {
+  font-size: 1.5rem;
+  border-bottom: 3px solid #00b4e6; }
+  .buttons:hover {
+    animation: border-flicker 2s linear forwards; }
+
+h1 {
+  animation: text-flicker 2s linear 3s forwards; }
+
+@keyframes text-flicker {
+  2% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  3% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  6% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  9% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  11% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  14% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  18% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  32% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  33% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  37% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  39% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  43% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  46% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  47% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  100% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; } }
+@keyframes letter-flicker {
+  2% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  3% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  6% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  9% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  11% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  14% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  18% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  32% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  33% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  37% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  39% {
+    color: rgba(60, 117, 95, 0.5);
+    text-shadow: none; }
+  40% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+  100% {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; } }
+@keyframes border-flicker {
+  2% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  3% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  5% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  6% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  7% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  9% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  13% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  16% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  18% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  22% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  34% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  36% {
+    border: 3px solid #002846;
+    box-shadow: none; }
+  54% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; }
+  100% {
+    border: 3px solid #00b4e6;
+    box-shadow: 0 0 15px -1px #00b4e6, 0 0 12px -1px #00b4e6 inset; } }
+header {
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  display: flex; }
+  header > div {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+    header > div > a {
+      line-height: 8vh;
+      display: block; }
+      header > div > a.active {
+        color: #B4B4B4;
+        animation: letter-flicker 3s linear infinite; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  background-color: #000;
+  line-height: 7vh;
+  padding: 0 2rem; }
+  footer a:hover {
+    animation: letter-flicker .5s linear infinite; }
+  footer span {
+    text-shadow: 0 0 15px #00b4e6; }
+    footer span:hover {
+      animation: letter-flicker .5s linear infinite; }
+
+main {
+  position: fixed;
+  font-size: 1rem;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 85vh;
+  margin: 8vh 0;
+  scroll-behavior: smooth; }
+  main::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none; }
+
+section {
+  scroll-snap-align: start;
+  height: 85vh; }
+
+.column {
+  display: inline-block;
+  margin: 1rem 0 0 1rem; }
+
+.title {
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 3rem;
+  color: rgba(0, 180, 230, 0.4); }
+
+#landing {
+  background: url(img/denis-pavlovic-wl5AypUmamo-unsplash-copy-3.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.credits {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px;
+  text-shadow: none; }
+
+.mosaic {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px; }
+
+.m-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .m-item.small {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6;
+    font-size: 200%; }
+  .m-item.large {
+    grid-row: span 3;
+    grid-column: span 3; }
+  .m-item.tall {
+    grid-row: span 3;
+    grid-column: span 2; }
+  .m-item.wide {
+    grid-row: span 2;
+    grid-column: span 3; }
+  .m-item#one {
+    padding: 2rem;
+    font-size: 75%;
+    grid-row: span 1;
+    grid-column: span 2; }
+  .m-item#two {
+    background: url(img/project-2.png) no-repeat center top;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply; }
+    .m-item#two:hover {
+      background-blend-mode: initial; }
+  .m-item#three {
+    background: url(img/project-4.png) no-repeat center top;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    grid-row: span 3;
+    grid-column: span 2; }
+    .m-item#three:hover {
+      background-blend-mode: initial; }
+  .m-item#five {
+    background: url(img/project-1.png) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply; }
+    .m-item#five:hover {
+      background-blend-mode: initial; }
+  .m-item#six {
+    background: url(img/project-3.png) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply; }
+    .m-item#six:hover {
+      background-blend-mode: initial; }
+
+.skills h1 {
+  color: #00b4e6;
+  text-shadow: 0 0 15px #00b4e6;
+  animation: letter-flicker .5s linear infinite; }
+
+.icon-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  list-style: none; }
+
+.icons {
+  margin: 0 1rem; }
+  .icons:hover {
+    color: #00b4e6;
+    text-shadow: 0 0 15px #00b4e6; }
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=style.css.map */
